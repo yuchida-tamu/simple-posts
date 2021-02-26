@@ -98,7 +98,7 @@ mongoose.model("Post", PostSchema);
 git add .
 git commit -m "setup mongodb post"
 ```
-- ####Implement User API
+####Implement User API
 - [ ] Implement GET (/api/v1/user); it returns all users
 - [ ] Implement POST (/api/v1/user/new); it creates a document(mongod) and returns an user
 - [ ] Implement GET (/api/v1/user/:id); it gets an user (find by id)
@@ -110,7 +110,7 @@ git commit -m "implement user api"
 ```
 
 
-- ####Implement POST API
+####Implement POST API
 - [ ] Implement GET (/api/v1/post); it returns all posts
 - [ ] Implement POST (/api/v1/post/new); it create a document(mongod) and returns a post
 - [ ] Implement GET (/api/v1/post/:id); it returns a post (find by id)
@@ -145,12 +145,51 @@ git commit -m "implement authentication"
 ------------
 
 ### Frontend
-- #### Setup client
+#### Setup client
 - [ ] initialize a react app, client `npx create-react-app client`
 - [ ] remove unnecessary files 
 - [ ] cleanup uncessary statesments and all in files
+- [ ] create a folder, containers
+- [ ] create a folder, components
 - [ ] commit
 ```bash
 git add .
 git commit -m "setup react app, client"
+```
+
+
+#### Post
+- [ ] create a folder, PostContainer in containers
+- [ ] create a file, PostContainer.js
+- [ ] implement PostContainer
+- [ ] create a folder, Post
+- [ ] create a file, Post.js
+- [ ] implement Post component (Refactor PostContainer.js)
+- [ ] commit
+```bash
+git add .
+git commit -m "implement client, Post"
+```
+
+#### User
+- [ ] create a folder, UserContainer in containers
+- [ ] create a file, UserContainer.js
+- [ ] implement UserContainer
+- [ ] create a folder, User
+- [ ] create a file, User.js
+- [ ] implemente User component (Refactor Post)
+- [ ] commit
+```bash
+git add .
+git commit -m "implement client, User"
+```
+
+#### Auth
+- [ ] create a folder, Auth in containers
+- [ ] create a file, Auth.js
+- [ ] implement Auth
+- [ ] commit
+```bash
+git add .
+git commit -m "implement client, Auth"
 ```
