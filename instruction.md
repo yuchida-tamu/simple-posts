@@ -98,7 +98,7 @@ mongoose.model("Post", PostSchema);
 git add .
 git commit -m "setup mongodb post"
 ```
-####Implement User API
+#### Implement User API
 - [ ] Implement GET (/api/v1/user); it returns all users
 - [ ] Implement POST (/api/v1/user/new); it creates a document(mongod) and returns an user
 - [ ] Implement GET (/api/v1/user/:id); it gets an user (find by id)
@@ -110,7 +110,7 @@ git commit -m "implement user api"
 ```
 
 
-####Implement POST API
+#### Implement POST API
 - [ ] Implement GET (/api/v1/post); it returns all posts
 - [ ] Implement POST (/api/v1/post/new); it create a document(mongod) and returns a post
 - [ ] Implement GET (/api/v1/post/:id); it returns a post (find by id)
