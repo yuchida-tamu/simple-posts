@@ -58,7 +58,7 @@ git commit -m "setup express routes"
 ```
 
 ------------
-- #### Setup DB
+#### Setup DB
 - [ ] add an environment variable, MONGO_URI  ``
 - [ ] create a folder (models) `mkdir models`
 ##### User
