@@ -94,13 +94,13 @@ mongoose.model("Post", PostSchema);
 ------------
 
 - [x] integrate the user.js and post.js to index.js
-- [ ] commit
+- [x] commit
 ```bash
 git add .
-git commit -m "setup mongodb post"
+git commit -m "setup mongodb"
 ```
 #### Implement User API
-- [ ] Implement GET (/api/v1/user); it returns all users
+- [x] Implement GET (/api/v1/user); it returns all users
 - [ ] Implement POST (/api/v1/user/new); it creates a document(mongod) and returns an user
 - [ ] Implement GET (/api/v1/user/:id); it gets an user (find by id)
 - [ ] Implement DELETE (/api/v1/user/:id); it deletes an user
