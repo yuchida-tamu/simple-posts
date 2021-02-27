@@ -51,7 +51,7 @@ git commit -m "setup"    # 変化分をコミット。
 
 ------------
 
-- [ ] commit
+- [x] commit
 ```bash
 git add .
 git commit -m "setup express routes"
@@ -59,40 +59,41 @@ git commit -m "setup express routes"
 
 ------------
 #### Setup DB
-- [ ] add an environment variable, MONGO_URI  ``
-- [ ] create a folder (models) `mkdir models`
+- [x] add an environment variable, MONGO_URI  ``
+- [x] create a folder (models) `mkdir models`
 ##### User
-- [ ] create a file (user.js) `touch models/user.js`
-- [ ] (in user.js..) import express and mongoose
-- [ ] create MongoDB Schema: UserSchema 
+- [x] create a file (user.js) `touch models/user.js`
+- [x] (in user.js..) import mongoose #DBを操作するライブラリ 
+- [x] create MongoDB Schema: UserSchema 
 ```javascript
 const UserSchema = new mongoose.Schema({
 	username: {type: String, required: true},
 	password: {type: String, required: true}
 })
 ```
-- [ ] create MongoDB Model: User
+- [x] create MongoDB Model: User
 ```javascript
 mongoose.model("User", UserSchema);
+# DBの操作はmodelを通して
 ```
 
 ##### Post
-- [ ] create a file (post.js) `touch models/user.js`
-- [ ] (in post.js..) import express and mongoose
-- [ ] create MongoDB Schema: PostSchema 
+- [x] create a file (post.js) `touch models/post.js`
+- [x] (in post.js..) import mongoose
+- [x] create MongoDB Schema: PostSchema 
 ```javascript
-const UserSchema = new mongoose.Schema({
-	username: {type: String, required: true},
-	password: {type: String, required: true}
+const PostSchema = new mongoose.Schema({
+	user_id: {type: String, required: true},
+	content: {type: String, required: true}
 })
 ```
-- [ ] create MongoDB Model: Post
+- [x] create MongoDB Model: Post
 ```javascript
 mongoose.model("Post", PostSchema);
 ```
 ------------
 
-- [ ] integrate the user.js and post.js to index.js
+- [x] integrate the user.js and post.js to index.js
 - [ ] commit
 ```bash
 git add .
