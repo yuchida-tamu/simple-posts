@@ -19,16 +19,16 @@
 
 ## CheckList
 ### Setup
-- [ ] Fork and clone the repo
-- [ ] Intialize npm project `npm init`
-- [ ] install dependancies `npm install express body-parser mongoose jsonwebtoken bcrypto`
-- [ ] install dev dependancies `npm install --save-dev dotenv`
-- [ ] create a file (.env) for environment variables
-- [ ] create .gitignore (write ".node-modules" in the file)
-- [ ] commit 
+- [x] Fork and clone the repo
+- [x] Intialize npm project `npm init`
+- [x] install dependancies `npm install express body-parser mongoose jsonwebtoken bcrypto cors`
+- [x] install dev dependancies `npm install --save-dev dotenv nodemon`
+- [x] create a file (.env) for environment variables 'touch .env .gitignore'
+- [x] create .gitignore (write "node-modules" & ".env" in the file)
+- [x] commit 
 ```bash
-git add .
-git commit -m "setup"
+git add .  #.gitignoreに書いていないファイルがトラックされる。
+git commit -m "setup"    # 変化分をコミット。
 ```
 
 ------------
@@ -37,21 +37,21 @@ git commit -m "setup"
 ### Backend
 - #### Setup express routes
 ##### User
-- [ ] Setup api (/api/v1/user, GET)
-- [ ] Setup api (/api/v1/user/new, POST)
-- [ ] Setup api (/api/v1/user/:id. GET)
-- [ ] Setup api (/api/v1/user/:id. DELETE)
+- [x] Setup api (/api/v1/user, GET)
+- [x] Setup api (/api/v1/user/new, POST)
+- [x] Setup api (/api/v1/user/:id. GET)
+- [x] Setup api (/api/v1/user/:id. DELETE)
 ##### Post
-- [ ] Setup api (/api/v1/post, GET)
-- [ ] Setup api (/api/v1/post/new, POST)
-- [ ] Setup api (/api/v1/post/:id. GET)
-- [ ] Setup api (/api/v1/post/:id. DELETE)
+- [x] Setup api (/api/v1/post, GET)
+- [x] Setup api (/api/v1/post/new, POST)
+- [x] Setup api (/api/v1/post/:id. GET)
+- [x] Setup api (/api/v1/post/:id. DELETE)
 ##### Auth
-- [ ] Setup api (/api/v1/auth, POST)
+- [x] Setup api (/api/v1/auth, POST)
 
 ------------
 
-- [ ] commit
+- [x] commit
 ```bash
 git add .
 git commit -m "setup express routes"
@@ -59,47 +59,48 @@ git commit -m "setup express routes"
 
 ------------
 #### Setup DB
-- [ ] add an environment variable, MONGO_URI  ``
-- [ ] create a folder (models) `mkdir models`
+- [x] add an environment variable, MONGO_URI  ``
+- [x] create a folder (models) `mkdir models`
 ##### User
-- [ ] create a file (user.js) `touch models/user.js`
-- [ ] (in user.js..) import express and mongoose
-- [ ] create MongoDB Schema: UserSchema 
+- [x] create a file (user.js) `touch models/user.js`
+- [x] (in user.js..) import mongoose #DBを操作するライブラリ 
+- [x] create MongoDB Schema: UserSchema 
 ```javascript
 const UserSchema = new mongoose.Schema({
 	username: {type: String, required: true},
 	password: {type: String, required: true}
 })
 ```
-- [ ] create MongoDB Model: User
+- [x] create MongoDB Model: User
 ```javascript
 mongoose.model("User", UserSchema);
+# DBの操作はmodelを通して
 ```
 
 ##### Post
-- [ ] create a file (post.js) `touch models/user.js`
-- [ ] (in post.js..) import express and mongoose
-- [ ] create MongoDB Schema: PostSchema 
+- [x] create a file (post.js) `touch models/post.js`
+- [x] (in post.js..) import mongoose
+- [x] create MongoDB Schema: PostSchema 
 ```javascript
-const UserSchema = new mongoose.Schema({
-	username: {type: String, required: true},
-	password: {type: String, required: true}
+const PostSchema = new mongoose.Schema({
+	user_id: {type: String, required: true},
+	content: {type: String, required: true}
 })
 ```
-- [ ] create MongoDB Model: Post
+- [x] create MongoDB Model: Post
 ```javascript
 mongoose.model("Post", PostSchema);
 ```
 ------------
 
-- [ ] integrate the user.js and post.js to index.js
-- [ ] commit
+- [x] integrate the user.js and post.js to index.js
+- [x] commit
 ```bash
 git add .
-git commit -m "setup mongodb post"
+git commit -m "setup mongodb"
 ```
 #### Implement User API
-- [ ] Implement GET (/api/v1/user); it returns all users
+- [x] Implement GET (/api/v1/user); it returns all users
 - [ ] Implement POST (/api/v1/user/new); it creates a document(mongod) and returns an user
 - [ ] Implement GET (/api/v1/user/:id); it gets an user (find by id)
 - [ ] Implement DELETE (/api/v1/user/:id); it deletes an user
