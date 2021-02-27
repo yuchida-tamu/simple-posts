@@ -19,12 +19,12 @@
 
 ## CheckList
 ### Setup
-- [ ] Fork and clone the repo
-- [ ] Intialize npm project `npm init`
-- [ ] install dependancies `npm install express body-parser mongoose jsonwebtoken bcrypto`
-- [ ] install dev dependancies `npm install --save-dev dotenv`
-- [ ] create a file (.env) for environment variables
-- [ ] create .gitignore (write ".node-modules" in the file)
+- [x] Fork and clone the repo
+- [x] Intialize npm project `npm init`
+- [x] install dependancies `npm install express body-parser mongoose jsonwebtoken bcrypto cors`
+- [x] install dev dependancies `npm install --save-dev dotenv nodemon`
+- [x] create a file (.env) for environment variables 'touch .env .gitignore'
+- [x] create .gitignore (write "node-modules" & ".env" in the file)
 - [ ] commit 
 ```bash
 git add .
