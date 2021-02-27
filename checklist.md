@@ -25,10 +25,10 @@
 - [x] install dev dependancies `npm install --save-dev dotenv nodemon`
 - [x] create a file (.env) for environment variables 'touch .env .gitignore'
 - [x] create .gitignore (write "node-modules" & ".env" in the file)
-- [ ] commit 
+- [x] commit 
 ```bash
-git add .
-git commit -m "setup"
+git add .  #.gitignoreに書いていないファイルがトラックされる。
+git commit -m "setup"    # 変化分をコミット。
 ```
 
 ------------
@@ -37,17 +37,17 @@ git commit -m "setup"
 ### Backend
 - #### Setup express routes
 ##### User
-- [ ] Setup api (/api/v1/user, GET)
-- [ ] Setup api (/api/v1/user/new, POST)
-- [ ] Setup api (/api/v1/user/:id. GET)
-- [ ] Setup api (/api/v1/user/:id. DELETE)
+- [x] Setup api (/api/v1/user, GET)
+- [x] Setup api (/api/v1/user/new, POST)
+- [x] Setup api (/api/v1/user/:id. GET)
+- [x] Setup api (/api/v1/user/:id. DELETE)
 ##### Post
-- [ ] Setup api (/api/v1/post, GET)
-- [ ] Setup api (/api/v1/post/new, POST)
-- [ ] Setup api (/api/v1/post/:id. GET)
-- [ ] Setup api (/api/v1/post/:id. DELETE)
+- [x] Setup api (/api/v1/post, GET)
+- [x] Setup api (/api/v1/post/new, POST)
+- [x] Setup api (/api/v1/post/:id. GET)
+- [x] Setup api (/api/v1/post/:id. DELETE)
 ##### Auth
-- [ ] Setup api (/api/v1/auth, POST)
+- [x] Setup api (/api/v1/auth, POST)
 
 ------------
 
